@@ -42,7 +42,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Build core
         run: |
-          pnpm exec nx run core:build
+          pnpm exec nx run core:build --base=https://navnote.github.io/rangeen/
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
