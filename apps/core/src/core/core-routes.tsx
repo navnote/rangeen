@@ -13,8 +13,12 @@ const appRoutes: RouteObject[] = [
   },
 ];
 
+const isGithubPages = import.meta.env.BASE_URL.includes(
+  'navnote.github.io/rangeen'
+);
+
 const router = createBrowserRouter([...appRoutes], {
-  basename: import.meta.env.BASE_URL,
+  basename: isGithubPages ? '/rangeen/' : '/',
 });
 
 export function CoreRoutes() {
