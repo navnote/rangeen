@@ -9,7 +9,7 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col gap-4 items-center mb-44 bg-primary py-12 text-white rounded-2xl shadow-lg">
+    <div className="flex flex-col gap-4 items-center mb-44 bg-primary py-12 text-white rounded-2xl shadow-lg text-center">
       <div className="text-white text-2xl">
         Made with ❤ by{' '}
         <a

@@ -59,7 +59,7 @@ export function CardsShare() {
                 </div>
               </div>
               <Select defaultValue="edit">
-                <SelectTrigger className="ml-auto w-[110px]" aria-label="Edit">
+                <SelectTrigger className="w-auto" aria-label="Edit">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent>
@@ -82,7 +82,7 @@ export function CardsShare() {
                 </div>
               </div>
               <Select defaultValue="view">
-                <SelectTrigger className="ml-auto w-[110px]" aria-label="Edit">
+                <SelectTrigger className="w-auto" aria-label="Edit">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent>
@@ -105,7 +105,7 @@ export function CardsShare() {
                 </div>
               </div>
               <Select defaultValue="view">
-                <SelectTrigger className="ml-auto w-[110px]" aria-label="Edit">
+                <SelectTrigger className="w-auto" aria-label="Edit">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent>
