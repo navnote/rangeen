@@ -1,4 +1,4 @@
 {
-    "_COMMENT": "This file is used to for shadcn",
-    "extends": "./tsconfig.base.json",
+  "_COMMENT": "This file is used to for shadcn",
+  "extends": "./tsconfig.base.json"
 }

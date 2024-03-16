@@ -8,7 +8,7 @@ export const HomePage = () => {
   return (
     <>
       <Toolbar />
-      <div className="container gap-12 flex flex-col ">
+      <div className="container flex flex-col gap-12 ">
         <HeroHeader />
         <CardsDemo />
         <Connect />

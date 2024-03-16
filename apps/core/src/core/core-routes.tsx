@@ -3,8 +3,8 @@ import {
   RouteObject,
   RouterProvider,
 } from 'react-router-dom';
-import { CoreLayout } from './core-layout';
 import { HomePage } from '../components/home';
+import { CoreLayout } from './core-layout';
 
 const appRoutes: RouteObject[] = [
   {
@@ -14,7 +14,7 @@ const appRoutes: RouteObject[] = [
 ];
 
 const isGithubPages = import.meta.env.BASE_URL.includes(
-  'navnote.github.io/rangeen'
+  'navnote.github.io/rangeen',
 );
 
 const router = createBrowserRouter([...appRoutes], {

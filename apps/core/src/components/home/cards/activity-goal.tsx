@@ -1,9 +1,9 @@
-import * as React from 'react';
 import { Minus, Plus } from 'lucide-react';
+import * as React from 'react';
 import { Bar, BarChart, ResponsiveContainer } from 'recharts';
 
-import { Button } from '@rangeen/shadcn-ui';
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
@@ -81,7 +81,7 @@ export function CardsActivityGoal() {
           </Button>
           <div className="flex-1 text-center">
             <div className="text-5xl font-bold tracking-tighter">{goal}</div>
-            <div className="text-[0.70rem] uppercase text-muted-foreground">
+            <div className="text-muted-foreground text-[0.70rem] uppercase">
               Calories/day
             </div>
           </div>

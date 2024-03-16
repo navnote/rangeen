@@ -56,13 +56,13 @@ export function TypographyInlineCode({
   children: React.ReactNode;
 }) {
   return (
-    <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
+    <code className="bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
       {children}
     </code>
   );
 }
 export function TypographyLead({ children }: { children: React.ReactNode }) {
-  return <p className="text-xl text-muted-foreground">{children}</p>;
+  return <p className="text-muted-foreground text-xl">{children}</p>;
 }
 
 export function TypographyLarge({ children }: { children: React.ReactNode }) {
@@ -74,5 +74,5 @@ export function TypographySmall({ children }: { children: React.ReactNode }) {
 }
 
 export function TypographyMuted({ children }: { children: React.ReactNode }) {
-  return <p className="text-sm text-muted-foreground">{children}</p>;
+  return <p className="text-muted-foreground text-sm">{children}</p>;
 }

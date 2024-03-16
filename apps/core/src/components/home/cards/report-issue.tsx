@@ -1,24 +1,22 @@
 import * as React from 'react';
 
-import { Button } from '@rangeen/shadcn-ui';
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from '@rangeen/shadcn-ui';
-import { Input } from '@rangeen/shadcn-ui';
-import { Label } from '@rangeen/shadcn-ui';
-import {
+  Input,
+  Label,
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
+  Textarea,
 } from '@rangeen/shadcn-ui';
-import { Textarea } from '@rangeen/shadcn-ui';
 
 export function CardsReportIssue() {
   const id = React.useId();

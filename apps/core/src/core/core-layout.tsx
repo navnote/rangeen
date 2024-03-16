@@ -3,7 +3,7 @@ import { Navigation } from '../components/navigation/navigation';
 
 export const CoreLayout = () => {
   return (
-    <div className="flex flex-col bg-background text-foreground">
+    <div className="bg-background text-foreground flex flex-col">
       <Navigation />
       <Outlet />
     </div>

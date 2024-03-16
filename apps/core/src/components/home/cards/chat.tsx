@@ -1,33 +1,34 @@
-import * as React from 'react';
 import { Check, Plus, Send } from 'lucide-react';
+import * as React from 'react';
 
-import { cn } from '@rangeen/shadcn-utils';
-import { Avatar, AvatarFallback, AvatarImage } from '@rangeen/shadcn-ui';
-import { Button } from '@rangeen/shadcn-ui';
-import { Card, CardContent, CardFooter, CardHeader } from '@rangeen/shadcn-ui';
 import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Button,
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
   Command,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
-} from '@rangeen/shadcn-ui';
-import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@rangeen/shadcn-ui';
-import { Input } from '@rangeen/shadcn-ui';
-import {
+  Input,
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from '@rangeen/shadcn-ui';
+import { cn } from '@rangeen/shadcn-utils';
 
 const users = [
   {
@@ -95,7 +96,7 @@ export function CardsChat() {
             </Avatar>
             <div>
               <p className="text-sm font-medium leading-none">Sofia Davis</p>
-              <p className="text-sm text-muted-foreground">m@example.com</p>
+              <p className="text-muted-foreground text-sm">m@example.com</p>
             </div>
           </div>
           <TooltipProvider delayDuration={0}>
@@ -123,8 +124,8 @@ export function CardsChat() {
                 className={cn(
                   'flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm',
                   message.role === 'user'
-                    ? 'ml-auto bg-primary text-primary-foreground'
-                    : 'bg-muted text-muted-foreground'
+                    ? 'bg-primary text-primary-foreground ml-auto'
+                    : 'bg-muted text-muted-foreground',
                 )}
               >
                 {message.content}
@@ -185,15 +186,15 @@ export function CardsChat() {
                       if (selectedUsers.includes(user)) {
                         return setSelectedUsers(
                           selectedUsers.filter(
-                            (selectedUser) => selectedUser !== user
-                          )
+                            (selectedUser) => selectedUser !== user,
+                          ),
                         );
                       }
 
                       return setSelectedUsers(
                         [...users].filter((u) =>
-                          [...selectedUsers, user].includes(u)
-                        )
+                          [...selectedUsers, user].includes(u),
+                        ),
                       );
                     }}
                   >
@@ -205,12 +206,12 @@ export function CardsChat() {
                       <p className="text-sm font-medium leading-none">
                         {user.name}
                       </p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-muted-foreground text-sm">
                         {user.email}
                       </p>
                     </div>
                     {selectedUsers.includes(user) ? (
-                      <Check className="ml-auto flex h-5 w-5 text-primary" />
+                      <Check className="text-primary ml-auto flex h-5 w-5" />
                     ) : null}
                   </CommandItem>
                 ))}
@@ -223,7 +224,7 @@ export function CardsChat() {
                 {selectedUsers.map((user) => (
                   <Avatar
                     key={user.email}
-                    className="inline-block border-2 border-background"
+                    className="border-background inline-block border-2"
                   >
                     <AvatarImage src={user.avatar} />
                     <AvatarFallback>{user.name[0]}</AvatarFallback>
@@ -231,7 +232,7 @@ export function CardsChat() {
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground text-sm">
                 Select users to add to this thread.
               </p>
             )}

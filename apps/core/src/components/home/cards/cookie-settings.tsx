@@ -1,14 +1,14 @@
-import { Button } from '@rangeen/shadcn-ui';
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
+  Label,
+  Switch,
 } from '@rangeen/shadcn-ui';
-import { Label } from '@rangeen/shadcn-ui';
-import { Switch } from '@rangeen/shadcn-ui';
 
 export function CardsCookieSettings() {
   return (
@@ -21,7 +21,7 @@ export function CardsCookieSettings() {
         <div className="flex items-center justify-between space-x-4">
           <Label htmlFor="necessary" className="flex flex-col space-y-1">
             <span>Strictly Necessary</span>
-            <span className="text-xs font-normal leading-snug text-muted-foreground">
+            <span className="text-muted-foreground text-xs font-normal leading-snug">
               These cookies are essential in order to use the website and use
               its features.
             </span>
@@ -31,7 +31,7 @@ export function CardsCookieSettings() {
         <div className="flex items-center justify-between space-x-4">
           <Label htmlFor="functional" className="flex flex-col space-y-1">
             <span>Functional Cookies</span>
-            <span className="text-xs font-normal leading-snug text-muted-foreground">
+            <span className="text-muted-foreground text-xs font-normal leading-snug">
               These cookies allow the website to provide personalized
               functionality.
             </span>
@@ -41,7 +41,7 @@ export function CardsCookieSettings() {
         <div className="flex items-center justify-between space-x-4">
           <Label htmlFor="performance" className="flex flex-col space-y-1">
             <span>Performance Cookies</span>
-            <span className="text-xs font-normal leading-snug text-muted-foreground">
+            <span className="text-muted-foreground text-xs font-normal leading-snug">
               These cookies help to improve the performance of the website.
             </span>
           </Label>

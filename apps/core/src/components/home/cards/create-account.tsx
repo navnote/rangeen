@@ -1,15 +1,14 @@
-import { Icons } from '@/components/icons';
-import { Button } from '@rangeen/shadcn-ui';
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
+  Input,
+  Label,
 } from '@rangeen/shadcn-ui';
-import { Input } from '@rangeen/shadcn-ui';
-import { Label } from '@rangeen/shadcn-ui';
 import { Chrome, Github } from 'lucide-react';
 
 export function CardsCreateAccount() {
@@ -37,7 +36,7 @@ export function CardsCreateAccount() {
             <span className="w-full border-t" />
           </div>
           <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-background px-2 text-muted-foreground">
+            <span className="bg-background text-muted-foreground px-2">
               Or continue with
             </span>
           </div>

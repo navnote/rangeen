@@ -1,5 +1,3 @@
-import * as React from 'react';
-import { ArrowUpDown, ChevronDownIcon, MoreHorizontal } from 'lucide-react';
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -12,17 +10,17 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
+import { ArrowUpDown, ChevronDownIcon, MoreHorizontal } from 'lucide-react';
+import * as React from 'react';
 
-import { Button } from '@rangeen/shadcn-ui';
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@rangeen/shadcn-ui';
-import { Checkbox } from '@rangeen/shadcn-ui';
-import {
+  Checkbox,
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
@@ -30,9 +28,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@rangeen/shadcn-ui';
-import { Input } from '@rangeen/shadcn-ui';
-import {
+  Input,
   Table,
   TableBody,
   TableCell,
@@ -175,7 +171,7 @@ export const columns: ColumnDef<Payment>[] = [
 export function CardsDataTable() {
   const [sorting, setSorting] = React.useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
-    []
+    [],
   );
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({});
@@ -258,7 +254,7 @@ export function CardsDataTable() {
                           ? null
                           : flexRender(
                               header.column.columnDef.header,
-                              header.getContext()
+                              header.getContext(),
                             )}
                       </TableHead>
                     );
@@ -280,7 +276,7 @@ export function CardsDataTable() {
                       >
                         {flexRender(
                           cell.column.columnDef.cell,
-                          cell.getContext()
+                          cell.getContext(),
                         )}
                       </TableCell>
                     ))}
@@ -300,7 +296,7 @@ export function CardsDataTable() {
           </Table>
         </div>
         <div className="flex items-center justify-end space-x-2 pt-4">
-          <div className="flex-1 text-sm text-muted-foreground">
+          <div className="text-muted-foreground flex-1 text-sm">
             {table.getFilteredSelectedRowModel().rows.length} of{' '}
             {table.getFilteredRowModel().rows.length} row(s) selected.
           </div>

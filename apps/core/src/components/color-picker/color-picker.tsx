@@ -6,12 +6,12 @@ type ColorPickerProps = {
 
 export const ColorPicker = ({ label, color, setColor }: ColorPickerProps) => {
   return (
-    <div className="flex flex-col gap justify-center items-center">
+    <div className="gap flex flex-col items-center justify-center">
       <input
         type="color"
         value={color}
         onChange={({ target: { value } }) => setColor(value)}
-        className="w-10 h-10 rounded-md bg-transparent cursor-pointer p-0 focus:ring-0 focus:outline-none"
+        className="h-10 w-10 cursor-pointer rounded-md bg-transparent p-0 focus:outline-none focus:ring-0"
       />
     </div>
   );

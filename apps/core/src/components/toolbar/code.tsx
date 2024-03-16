@@ -9,12 +9,12 @@ import {
   ScrollArea,
   buttonVariants,
 } from '@rangeen/shadcn-ui';
+import { cn } from '@rangeen/shadcn-utils';
+import { CheckIcon, CodeIcon, CopyIcon } from 'lucide-react';
+import { useState } from 'react';
 import { useThemeContext } from '../../core/theme/context';
 import { RangeenThemeSchema } from '../../core/theme/types';
 import { getCssVarName } from '../../core/theme/utils';
-import { CheckIcon, CodeIcon, CopyIcon } from 'lucide-react';
-import { useState } from 'react';
-import { cn } from '@rangeen/shadcn-utils';
 
 export const Code = () => {
   const { rangeenTheme } = useThemeContext();
@@ -60,23 +60,23 @@ export const Code = () => {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="flex flex-col gap-1  justify-center items-center">
+        <div className="flex flex-col items-center  justify-center gap-1">
           <div
             className={cn(
               buttonVariants({
                 size: 'icon',
                 variant: 'ghost',
               }),
-              `w-[36px] h-[34px] border border-gray-400 hover:bg-gray-500 hover:text-gray-100 data-[state=on]:bg-gray-900 data-[state=on]:text-gray-100`
+              `h-[34px] w-[36px] border border-gray-400 hover:bg-gray-500 hover:text-gray-100 data-[state=on]:bg-gray-900 data-[state=on]:text-gray-100`,
             )}
           >
-            <CodeIcon className="w-4 h-4" />
+            <CodeIcon className="h-4 w-4" />
           </div>
         </div>
       </DialogTrigger>
       <DialogContent className="">
         <DialogHeader>
-          <DialogTitle className="flex gap-2 items-center justify-start">
+          <DialogTitle className="flex items-center justify-start gap-2">
             <span className="text-muted-foreground">Shadcn Theme</span>
             <Button
               type="submit"

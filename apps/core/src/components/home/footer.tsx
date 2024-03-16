@@ -9,8 +9,8 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col gap-4 items-center mb-44 bg-primary py-12 text-white rounded-2xl shadow-lg text-center">
-      <div className="text-white text-2xl">
+    <div className="bg-primary mb-44 flex flex-col items-center gap-4 rounded-2xl py-12 text-center text-white shadow-lg">
+      <div className="text-2xl text-white">
         Made with ❤ by{' '}
         <a
           href="https://navnote.com/"
@@ -18,7 +18,7 @@ export const Footer = () => {
           rel="noreferrer"
           className={cn(
             buttonVariants({ variant: 'link' }),
-            'p-0 text-white hover:text-primary-foreground focus:text-primary-foreground variant={"ghost"} text-2xl'
+            'hover:text-primary-foreground focus:text-primary-foreground variant={"ghost"} p-0 text-2xl text-white',
           )}
         >
           Navjot Ahuja
@@ -35,7 +35,7 @@ export const Footer = () => {
             className="text-primary-foreground"
             variant={'ghost'}
           >
-            <LinkedinIcon className="w-6 h-6" />
+            <LinkedinIcon className="h-6 w-6" />
           </Button>
         </a>
         <a
@@ -48,7 +48,7 @@ export const Footer = () => {
             className="text-primary-foreground"
             variant={'ghost'}
           >
-            <GithubIcon className="w-6 h-6" />
+            <GithubIcon className="h-6 w-6" />
           </Button>
         </a>
         <a href="https://twitter.com/navnote" target="_blank" rel="noreferrer">
@@ -57,7 +57,7 @@ export const Footer = () => {
             className="text-primary-foreground"
             variant={'ghost'}
           >
-            <TwitterIcon className="w-6 h-6" />
+            <TwitterIcon className="h-6 w-6" />
           </Button>
         </a>
         <a
@@ -70,7 +70,7 @@ export const Footer = () => {
             className="text-primary-foreground"
             variant={'ghost'}
           >
-            <YoutubeIcon className="w-6 h-6" />
+            <YoutubeIcon className="h-6 w-6" />
           </Button>
         </a>
       </div>

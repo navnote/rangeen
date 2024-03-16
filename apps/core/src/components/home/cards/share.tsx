@@ -1,22 +1,22 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@rangeen/shadcn-ui';
-import { Button } from '@rangeen/shadcn-ui';
 import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@rangeen/shadcn-ui';
-import { Input } from '@rangeen/shadcn-ui';
-import { Label } from '@rangeen/shadcn-ui';
-import {
+  Input,
+  Label,
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
+  Separator,
 } from '@rangeen/shadcn-ui';
-import { Separator } from '@rangeen/shadcn-ui';
 
 export function CardsShare() {
   return (
@@ -55,7 +55,7 @@ export function CardsShare() {
                   <p className="text-sm font-medium leading-none">
                     Olivia Martin
                   </p>
-                  <p className="text-sm text-muted-foreground">m@example.com</p>
+                  <p className="text-muted-foreground text-sm">m@example.com</p>
                 </div>
               </div>
               <Select defaultValue="edit">
@@ -78,7 +78,7 @@ export function CardsShare() {
                   <p className="text-sm font-medium leading-none">
                     Isabella Nguyen
                   </p>
-                  <p className="text-sm text-muted-foreground">b@example.com</p>
+                  <p className="text-muted-foreground text-sm">b@example.com</p>
                 </div>
               </div>
               <Select defaultValue="view">
@@ -101,7 +101,7 @@ export function CardsShare() {
                   <p className="text-sm font-medium leading-none">
                     Sofia Davis
                   </p>
-                  <p className="text-sm text-muted-foreground">p@example.com</p>
+                  <p className="text-muted-foreground text-sm">p@example.com</p>
                 </div>
               </div>
               <Select defaultValue="view">

@@ -5,8 +5,8 @@ import {
   argbFromHex,
   themeFromSourceColor,
 } from '@material/material-color-utilities';
-import { getCssVarName, transformMaterialThemeToRangeenTheme } from './utils';
 import { RangeenThemeSchema } from './types';
+import { getCssVarName, transformMaterialThemeToRangeenTheme } from './utils';
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -28,7 +28,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       const value = rangeenTheme.dark[key as keyof RangeenThemeSchema];
       document.documentElement.style.setProperty(
         `${getCssVarName(key)}-dark`,
-        value
+        value,
       );
     });
 

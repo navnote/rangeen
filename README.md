@@ -8,5 +8,3 @@ The project uses material design utilities to generate the colour palette and th
 ## Visualise Shadcn Components
 
 ![image](https://github.com/Navnote/rangeen/assets/6350299/005d6e92-892f-418d-9fe0-1156add072d1)
-
-

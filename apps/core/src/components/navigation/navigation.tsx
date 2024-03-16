@@ -6,12 +6,12 @@ import { RangeenLogo } from '../RangeenLogo';
 
 export const Navigation = () => {
   return (
-    <div className="pr-4 flex place-content-between border-b border-border">
+    <div className="border-border flex place-content-between border-b pr-4">
       <a
         href="/"
-        className="mr-6 flex items-center justify-center space-x-2 text-2xl text-primary hover:text-gray-700 p-4"
+        className="text-primary mr-6 flex items-center justify-center space-x-2 p-4 text-2xl hover:text-gray-700"
       >
-        <RangeenLogo className="w-12 h-12 fill-primary" />
+        <RangeenLogo className="fill-primary h-12 w-12" />
         <span className="font-bold">RANGEEN</span>
       </a>
       <nav className="flex items-center gap-6 text-sm">
@@ -21,9 +21,9 @@ export const Navigation = () => {
           rel="noreferrer"
           className={buttonVariants({ variant: 'default' })}
         >
-          <div className="flex gap-2 items-center">
-            <Github className="w-6 h-6" />
-            <span className="hidden md:inline-block text-primary-foreground text-sm">
+          <div className="flex items-center gap-2">
+            <Github className="h-6 w-6" />
+            <span className="text-primary-foreground hidden text-sm md:inline-block">
               Rangeen
             </span>
           </div>
@@ -34,9 +34,9 @@ export const Navigation = () => {
           rel="noreferrer"
           className={buttonVariants({ variant: 'default' })}
         >
-          <div className="flex gap-2 items-center">
-            <Globe className="w-6 h-6" />
-            <span className="hidden md:inline-block text-primary-foreground text-sm">
+          <div className="flex items-center gap-2">
+            <Globe className="h-6 w-6" />
+            <span className="text-primary-foreground hidden text-sm md:inline-block">
               Navjot Ahuja
             </span>
           </div>

@@ -1,6 +1,6 @@
 export * from './ui/accordion';
-export * from './ui/alert-dialog';
 export * from './ui/alert';
+export * from './ui/alert-dialog';
 export * from './ui/aspect-ratio';
 export * from './ui/avatar';
 export * from './ui/badge';
@@ -34,7 +34,7 @@ export * from './ui/table';
 export * from './ui/tabs';
 export * from './ui/textarea';
 export * from './ui/toast';
-export * from './ui/typography';
-export * from './ui/toggle-group';
 export * from './ui/toggle';
+export * from './ui/toggle-group';
 export * from './ui/tooltip';
+export * from './ui/typography';

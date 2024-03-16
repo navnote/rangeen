@@ -1,7 +1,6 @@
 import { addDays } from 'date-fns';
 
-import { Calendar } from '@rangeen/shadcn-ui';
-import { Card, CardContent } from '@rangeen/shadcn-ui';
+import { Calendar, Card, CardContent } from '@rangeen/shadcn-ui';
 
 const start = new Date(2023, 5, 5);
 
