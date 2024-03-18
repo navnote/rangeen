@@ -22,7 +22,7 @@ export const Navigation = () => {
           className={buttonVariants({ variant: 'default' })}
         >
           <div className="flex items-center gap-2">
-            <Github className="h-6 w-6" />
+            <Github className="h-4 w-4" />
             <span className="text-primary-foreground hidden text-sm md:inline-block">
               Rangeen
             </span>
@@ -35,7 +35,7 @@ export const Navigation = () => {
           className={buttonVariants({ variant: 'default' })}
         >
           <div className="flex items-center gap-2">
-            <Globe className="h-6 w-6" />
+            <Globe className="h-4 w-4" />
             <span className="text-primary-foreground hidden text-sm md:inline-block">
               Navjot Ahuja
             </span>
