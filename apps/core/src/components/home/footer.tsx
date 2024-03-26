@@ -9,8 +9,8 @@ import {
 
 export const Footer = () => {
   return (
-    <div className="bg-primary mb-44 flex flex-col items-center gap-4 rounded-2xl py-12 text-center text-white shadow-lg">
-      <div className="text-2xl text-white">
+    <div className="bg-primary text-primary-foreground mb-44 flex flex-col items-center gap-4 rounded-2xl py-12  shadow-lg">
+      <div className="text-primary-foreground text-2xl">
         Made with ❤ by{' '}
         <a
           href="https://navnote.com/"
@@ -18,7 +18,7 @@ export const Footer = () => {
           rel="noreferrer"
           className={cn(
             buttonVariants({ variant: 'link' }),
-            'hover:text-primary-foreground focus:text-primary-foreground variant={"ghost"} p-0 text-2xl text-white',
+            'text-primary-foreground p-0 text-2xl ',
           )}
         >
           Navjot Ahuja
