@@ -76,5 +76,6 @@
 @layer base {
   html {
     font-family: 'Sen', system-ui, sans-serif;
+    zoom: 0.9;
   }
 }

@@ -167,7 +167,7 @@ export function CardsChat() {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="gap-0 p-0 outline-none">
           <DialogHeader className="px-4 pb-4 pt-5">
-            <DialogTitle>New message</DialogTitle>
+            <DialogTitle className="text-foreground">New message</DialogTitle>
             <DialogDescription>
               Invite a user to this thread. This will create a new group
               message.
